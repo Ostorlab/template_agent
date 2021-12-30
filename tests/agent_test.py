@@ -3,4 +3,5 @@
 
 def testAgent():
     """Fake test."""
+    # pylint: disable=R0124
     assert True is True
