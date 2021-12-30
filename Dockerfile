@@ -1,11 +1,11 @@
-FROM python:slim
+FROM python:3.8-slim-buster
 
-RUN pip install -r requirements.txt
+WORKDIR /app
 
-RUN mkdir /code
-WORKDIR /code
-ADD src/ /code/
-ADD agent.yaml /code/
+COPY requirement.txt .
+RUN pip3 install -r requirement.txt
 
+COPY src/ .
+COPY agent.yaml .
 
 CMD python3 /code/agent.py
