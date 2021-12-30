@@ -1,5 +1,3 @@
-python-package-lint.yml
-
 # This workflow use pylint:
 #  - Install Python dependencies.
 #  - Run pylint for each of the supported Python versions. 
