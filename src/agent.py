@@ -14,4 +14,5 @@ class HellWorldAgent(ostorlab.Agent):
 
         """
         # TODO (author): implement agent logic here.
+        del message
         self.emit('v3.healthcheck.ping', {'body': 'Hello World!'})
