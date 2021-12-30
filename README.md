@@ -2,7 +2,7 @@
 
 ## How to :
 * Create a repository from base_agent template.
-* git remote add template https://github.com/Ostorlab/base_agent.git
+* git remote add template https://github.com/Ostorlab/template_agent.git
 
 
 **In case new changes are made to the template**
