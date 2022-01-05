@@ -1,10 +1,11 @@
 """Sample agent implementation"""
-import ostorlab
+from ostorlab.agent import agent
+from ostorlab.agent import message as m
 
-class HellWorldAgent(ostorlab.Agent):
+class HellWorldAgent(agent.Agent):
     """Hello world agent."""
 
-    def process(self, message: ostorlab.Message) -> None:
+    def process(self, message: m.Message) -> None:
         """TODO (author): add your description here.
 
         Args:
