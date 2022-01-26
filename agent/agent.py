@@ -1,6 +1,6 @@
 """Sample agent implementation"""
 import logging
-from rich.logging import RichHandler
+from rich import logging as rich_logging
 
 from ostorlab.agent import agent
 from ostorlab.agent import message as m
@@ -8,7 +8,7 @@ from ostorlab.agent import message as m
 logging.basicConfig(
     format='%(message)s',
     datefmt='[%X]',
-    handlers=[RichHandler(rich_tracebacks=True)]
+    handlers=[rich_logging.RichHandler(rich_tracebacks=True)]
 )
 logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')
@@ -18,6 +18,7 @@ class HellWorldAgent(agent.Agent):
     """Hello world agent."""
 
     def start(self) -> None:
+        """TODO (author): add your description here."""
         logger.info('running start')
 
     def process(self, message: m.Message) -> None:
