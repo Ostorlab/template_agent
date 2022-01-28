@@ -7,6 +7,7 @@ RUN pip install --prefix=/install -r /requirement.txt
 FROM base
 COPY --from=builder /install /usr/local
 RUN mkdir -p /app/agent
+ENV PYTHONPATH=/app
 COPY agent /app/agent
 COPY ostorlab.yaml /app/agent/ostorlab.yaml
 WORKDIR /app/agent
