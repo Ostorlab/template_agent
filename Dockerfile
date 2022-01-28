@@ -10,4 +10,4 @@ RUN mkdir -p /app/agent
 COPY agent /app/agent
 COPY ostorlab.yaml /app/agent/ostorlab.yaml
 WORKDIR /app/agent
-CMD ["python3", "/app/agent/agent.py"]
+CMD ["python3", "/app/agent/template_agent.py"]
