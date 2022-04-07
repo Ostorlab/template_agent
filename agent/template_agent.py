@@ -8,6 +8,8 @@ from ostorlab.agent import message as m
 logging.basicConfig(
     format='%(message)s',
     datefmt='[%X]',
+    level='INFO',
+    force=True,
     handlers=[rich_logging.RichHandler(rich_tracebacks=True)]
 )
 logger = logging.getLogger(__name__)
