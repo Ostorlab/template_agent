@@ -3,7 +3,7 @@ import logging
 from rich import logging as rich_logging
 
 from ostorlab.agent import agent
-from ostorlab.agent import message as m
+from ostorlab.agent.message import message as m
 
 logging.basicConfig(
     format='%(message)s',
