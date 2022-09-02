@@ -1,6 +1,6 @@
 """Unittests for agent."""
 
 
-def testAgent():
+def testAgent() -> None:
     """Fake test."""
     assert True

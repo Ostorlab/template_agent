@@ -1,4 +1,5 @@
 pylint
 pylint-quotes
 pytest
+coverage
 pytest-cov
