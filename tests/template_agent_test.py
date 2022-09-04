@@ -3,4 +3,4 @@
 
 def testAgent() -> None:
     """Fake test."""
-    assert True
+    assert False
