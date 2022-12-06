@@ -10,7 +10,7 @@ logging.basicConfig(
     datefmt='[%X]',
     level='INFO',
     force=True,
-    handlers=[rich_logging.RichHandler(rich_tracebacks=True)]
+    handlers=[rich_logging.RichHandler(rich_tracebacks=True)],
 )
 logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')
