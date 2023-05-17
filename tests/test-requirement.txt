@@ -1,3 +1,5 @@
 pylint
 pytest
 black
+mypy
+typing-extensions
