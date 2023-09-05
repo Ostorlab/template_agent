@@ -12,10 +12,10 @@ This repo is a template to build an Ostorlab agent in Python. It ships with good
 
 Here are links to good resources to get started:
 
-* [Write An Agent](https://docs.ostorlab.co/tutorials/write-an-ostorlab-agent/)
-* [Use Ostorlab](https://docs.ostorlab.co/tutorials/run-your-first-scan/)
-* [Debugging and Testing Agents](https://docs.ostorlab.co/tutorials/debugging-agents/)
-* [Ostorlab Internals](https://docs.ostorlab.co/tutorials/life-of-a-scan/)
+* [Write An Agent](https://docs.ostorlab.co/tutorials/write-an-ostorlab-agent.html)
+* [Use Ostorlab](https://docs.ostorlab.co/tutorials/run-your-first-scan.html)
+* [Debugging and Testing Agents](https://docs.ostorlab.co/tutorials/debugging-agents.html)
+* [Ostorlab Internals](https://docs.ostorlab.co/tutorials/life-of-a-scan.html)
 
 ## Ideas for Agents to build
 
