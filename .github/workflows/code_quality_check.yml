@@ -34,14 +34,14 @@ jobs:
           python -m pip install -r requirement.txt
           python -m pip install -r tests/test-requirement.txt
 
-      - name: Run Ruff Formatter (Check)
+      - name: Checking code formatting.
         uses: chartboost/ruff-action@v1
         with:
           args: format --check
 
-      - name: Run Ruff Linter
+      - name: Running linter.
         uses: chartboost/ruff-action@v1
 
-      - name: Run Mypy (Static Type Checker)
+      - name: Running static types checker.
         run: |
           mypy
