@@ -3,7 +3,7 @@
 This repo is a template for building an [Ostorlab](https://github.com/ostorlab/ostorlab) agent in Python. It ships with good best practices like:
 
 * Github actions workflow
-* Linting checks
+* Linting checks with Ruff
 * Static typing checks with Mypy
 * Running the unit test with Pytest
 
