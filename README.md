@@ -1,4 +1,4 @@
-# Ostorlab Template Agent
+# OXO Template Agent
 
 This repo is a template for building an [Ostorlab](https://github.com/ostorlab/ostorlab) agent in Python. It ships with good best practices like:
 
@@ -11,10 +11,10 @@ This repo is a template for building an [Ostorlab](https://github.com/ostorlab/o
 
 Here are links to good resources to get started:
 
-* [Write your first Agent](https://docs.ostorlab.co/tutorials/write-an-ostorlab-agent.html)
-* [Use Ostorlab to run scans](https://docs.ostorlab.co/tutorials/run-your-first-scan.html)
-* [Debugging and Testing Agents](https://docs.ostorlab.co/tutorials/debugging-agents.html)
-* [Understand Ostorlab Internals](https://docs.ostorlab.co/tutorials/life-of-a-scan.html)
+* [Write your first Agent](https://oxo.ostorlab.co/tutorials/write_an_agent)
+* [Use OXO to run scans](https://oxo.ostorlab.co/tutorials)
+* [Debugging and Testing Agents](https://oxo.ostorlab.co/tutorials/debugging_agents)
+* [Understand OXO Internals](https://oxo.ostorlab.co/tutorials/life_of_a_scan)
 
 ## Ideas for Agents to build
 
