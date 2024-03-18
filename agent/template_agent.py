@@ -1,4 +1,5 @@
 """Sample agent implementation"""
+
 import logging
 from rich import logging as rich_logging
 
