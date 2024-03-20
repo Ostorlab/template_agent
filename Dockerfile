@@ -10,6 +10,6 @@ COPY --from=builder /install /usr/local
 RUN mkdir -p /app/agent
 ENV PYTHONPATH=/app
 COPY agent /app/agent
-COPY ostorlab.yaml /app/agent/ostorlab.yaml
+COPY oxo.yaml /app/agent/oxo.yaml
 WORKDIR /app
 CMD ["python3", "/app/agent/template_agent.py"]
