@@ -1,6 +1,7 @@
 # OXO Template Agent
 
-This repo is a template for building an [Ostorlab](https://github.com/ostorlab/ostorlab) agent in Python. It ships with good best practices like:
+This repo is a template for building an [OXO](https://github.com/ostorlab/ostorlab) agent in Python. It ships with
+Good best practices like:
 
 * Github actions workflow
 * Linting checks with Ruff
@@ -15,6 +16,36 @@ Here are links to good resources to get started:
 * [Use OXO to run scans](https://oxo.ostorlab.co/tutorials)
 * [Debugging and Testing Agents](https://oxo.ostorlab.co/tutorials/debugging_agents)
 * [Understand OXO Internals](https://oxo.ostorlab.co/tutorials/life_of_a_scan)
+
+## Contributing
+
+To contribute to this project, follow these steps:
+1. Fork this repository.
+2. Clone your forked repository: `git clone <your_fork_url>`
+3. Navigate into your repository's directory: `cd <repository_directory>`
+4. Create a new branch: `git checkout -b <branch_name>`.
+5. Install the dependencies: `pip install -r requirements.txt`.
+6. Make your changes.
+7. Ensure the tests pass:
+    ```sh
+    pip install -r tests/requirements.txt
+    pytest .
+    ```
+8. Ensure the linter passes:
+    ```sh
+    pip install -r linting-requirements.txt
+    ruff format .
+    ruff check .
+    ```
+9. Ensure the static type checks pass:
+    ```sh
+    pip install -r typing-requirements.txt
+    mypy
+    ```
+10. Commit your changes: `git commit -m '<commit_message>'`.
+11. Push to the remote branch: `git push origin <branch_name>`.
+12. Create a pull request from the forked repository.
+
 
 ## Ideas for Agents to build
 

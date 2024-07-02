@@ -3,8 +3,8 @@ FROM base as builder
 RUN apk add build-base
 RUN mkdir /install
 WORKDIR /install
-COPY requirement.txt /requirement.txt
-RUN pip install --prefix=/install -r /requirement.txt
+COPY requirements.txt /requirements.txt
+RUN pip install --prefix=/install -r /requirements.txt
 FROM base
 COPY --from=builder /install /usr/local
 RUN mkdir -p /app/agent
