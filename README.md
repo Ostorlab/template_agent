@@ -1,6 +1,6 @@
 # OXO Template Agent
 
-This repo is a template for building an [Ostorlab](https://github.com/ostorlab/ostorlab) agent in Python. It ships with
+This repo is a template for building an [OXO](https://github.com/ostorlab/ostorlab) agent in Python. It ships with
 good best practices like:
 
 * Github actions workflow
