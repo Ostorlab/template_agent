@@ -33,7 +33,6 @@ To contribute to this project, follow these steps:
     ```
 8. Ensure the linter passes:
     ```sh
-    pip install -r linting-requirements.txt
     ruff format .
     ruff check .
     ```
