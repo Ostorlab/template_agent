@@ -28,7 +28,7 @@ To contribute to this project, follow these steps:
 6. Make your changes.
 7. Ensure the tests pass:
     ```sh
-    pip install -r tests/requirements.txt
+    pip install -r tests/test-requirements.txt
     pytest .
     ```
 8. Ensure the linter passes:
