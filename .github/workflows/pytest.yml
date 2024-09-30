@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies.
         run: |
           python -m uv pip install -r requirements.txt
-          python -m uv pip install -r tests/requirements.txt
+          python -m uv pip install -r tests/test-requirements.txt
       - name: Runnning tests with pytest.
         run: |
           set -o pipefail
