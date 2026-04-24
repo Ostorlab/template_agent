@@ -1,4 +1,4 @@
-FROM python:3.11-alpine as base
+FROM python:3.14-alpine as base
 FROM base as builder
 RUN apk add build-base
 RUN mkdir /install
@@ -12,4 +12,4 @@ ENV PYTHONPATH=/app
 COPY agent /app/agent
 COPY oxo.yaml /app/agent/oxo.yaml
 WORKDIR /app
-CMD ["python3", "/app/agent/template_agent.py"]
+CMD ["python", "/app/agent/template_agent.py"]
