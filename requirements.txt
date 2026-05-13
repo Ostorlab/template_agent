@@ -1,2 +1,8 @@
 ostorlab[agent]
 rich
+androguard
+httpx
+mcp
+paramiko
+pydantic_ai
+tenacity

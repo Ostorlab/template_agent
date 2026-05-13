@@ -1,4 +1,5 @@
-pytest
-ruff
 mypy
+pytest
+pytest-mock
+ruff
 typing-extensions

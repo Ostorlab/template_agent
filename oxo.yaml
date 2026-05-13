@@ -1,9 +1,62 @@
 kind: Agent
-name: template_agent # Agent name, must be unique by organisation to be published on the store.
-version: 0.0.0 # Must respect semantic versioning.
-description: Agent description. # Support for Markdown format.
-in_selectors: # List of input selectors, this is basically the list of messages the agent should receive.
-  - v3.healthcheck.ping
-out_selectors: [] # List of output selectors.
-docker_file_path : Dockerfile # Dockerfile path for automated releases.
-docker_build_root : . # Docker build dir for automated release build.
+name: android_anti_tampering
+version: 0.0.1
+description: |
+  Android Anti-Tampering Detection Agent.
+
+  Detects whether an Android application implements anti-tampering protections by
+  actually tampering with the APK and observing if the app catches it.
+
+  Performs isolated passes:
+  - Pass 1: Re-sign APK with a different key (tests signature/cert checks)
+  - Pass 2: Set android:debuggable=true (tests manifest/debugger checks)
+
+  Each pass installs the tampered APK, runs monkey_tester to interact with the app,
+  and observes whether the app exits or shows a security message.
+
+  Findings:
+  - MEDIUM: Anti-tampering not detected — app ran normally after tampering (missing protection)
+  - INFO: Anti-tampering detected — app correctly caught the tampering (protection works)
+
+in_selectors:
+  - v3.asset.file.android.apk
+  - v3.asset.file.android.aab
+out_selectors:
+  - v3.report.vulnerability
+docker_file_path: Dockerfile
+docker_build_root: .
+args:
+  - name: api_scanning_engine_base_url
+    type: string
+    description: Scanning Engine API URL
+    value: "https://scanner.ostorlab.co/orchestrator/graphql"
+  - name: scanning_engine_token
+    type: string
+    description: Scanning engine authentication token
+  - name: relay_address
+    description: IP address of the device relay
+    type: string
+  - name: relay_username
+    description: Username for SSH authentication with the relay
+    type: string
+  - name: relay_password
+    description: Password for SSH authentication with the relay
+    type: string
+  - name: relay_port
+    description: SSH port for connecting to the relay
+    type: number
+    value: 22
+  - name: device_name
+    description: ADB device serial (e.g. emulator-5554)
+    type: string
+  - name: device_version
+    description: Android version of the device
+    type: string
+    value: "10.0"
+  - name: vision_api_key
+    description: API key for the vision model used to analyze screenshots
+    type: string
+  - name: vision_model
+    description: Vision model identifier in provider/model format (e.g. google/gemini-2.5-pro)
+    type: string
+    value: "google/gemini-2.5-pro"
