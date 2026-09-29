@@ -1,10 +1,10 @@
 """Sample agent implementation"""
 
 import logging
-from rich import logging as rich_logging
 
 from ostorlab.agent import agent
 from ostorlab.agent.message import message as m
+from rich import logging as rich_logging
 
 logging.basicConfig(
     format="%(message)s",
@@ -14,7 +14,6 @@ logging.basicConfig(
     handlers=[rich_logging.RichHandler(rich_tracebacks=True)],
 )
 logger = logging.getLogger(__name__)
-logger.setLevel("DEBUG")
 
 
 class HellWorldAgent(agent.Agent):
