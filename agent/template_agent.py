@@ -14,7 +14,6 @@ logging.basicConfig(
     handlers=[rich_logging.RichHandler(rich_tracebacks=True)],
 )
 logger = logging.getLogger(__name__)
-logger.setLevel("DEBUG")
 
 
 class HellWorldAgent(agent.Agent):
